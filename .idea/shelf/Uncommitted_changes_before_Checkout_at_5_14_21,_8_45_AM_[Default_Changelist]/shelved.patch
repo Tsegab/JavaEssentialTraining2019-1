@@ -1,0 +1,33 @@
+Index: src/com/company/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\n\nimport java.time.LocalDateTime;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        var now = LocalDateTime.now();\n        var monthNumber = now.getMonthValue();\n\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/Main.java b/src/com/company/Main.java
+--- a/src/com/company/Main.java	(revision 6ee7663b556bb0ce6640cddb3a1a476815ca1027)
++++ b/src/com/company/Main.java	(date 1621003269389)
+@@ -9,5 +9,22 @@
+         var now = LocalDateTime.now();
+         var monthNumber = now.getMonthValue();
+ 
++        switch (monthNumber) {
++            case 1:
++                System.out.println(" The month is January");
++                break;
++            case 2:
++                System.out.println(" The month is February");
++                break;
++            case 3:
++            case 4:
++            case 5:
++            case 6:
++                System.out.println(" The month is March");
++                break;
++            default:
++                System.out.println("you chose different month");
++        }
++
+     }
+ }

@@ -1,0 +1,37 @@
+Index: src/com/company/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/Main.java b/src/com/company/Main.java
+--- a/src/com/company/Main.java	(revision 56ed5e00f9e89cc232dfd1d8388e377b126c645b)
++++ b/src/com/company/Main.java	(date 1620965270070)
+@@ -1,8 +1,26 @@
+ package com.company;
+ 
++import java.util.Scanner;
++
+ public class Main {
+ 
+     public static void main(String[] args) {
++        var scanner = new Scanner((System.in));
++
++        System.out.print("Enter a value: ");
++        var input = scanner.nextLine();
++        System.out.println(input);
++
++
++        System.out.print("Enter a value 1: ");
++        var number1 = scanner.nextInt();
++
+ 
++
++        System.out.print("Enter a value 2: ");
++        var number2 = scanner.nextInt();
++
++        var sum = number1 + number2;
++        System.out.println("The sum is " + sum);
+     }
+ }

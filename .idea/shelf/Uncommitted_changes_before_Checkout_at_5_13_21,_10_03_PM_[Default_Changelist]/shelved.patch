@@ -1,0 +1,32 @@
+Index: src/com/company/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        var s1 = \"Welcome to California!\";\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/Main.java b/src/com/company/Main.java
+--- a/src/com/company/Main.java	(revision 7528559dfbd57cf89bbbee56a6357ac52735f330)
++++ b/src/com/company/Main.java	(date 1620964969257)
+@@ -4,5 +4,21 @@
+ 
+     public static void main(String[] args) {
+         var s1 = "Welcome to California!";
++        System.out.println("Length of string: " + s1.length() );
++
++        int position = s1.indexOf("California");
++        System.out.println("The position is " + position);
++
++
++        var sub = s1.substring(11);
++        System.out.println(sub );
++
++
++        String s2 = " Welcome     ";
++        var len = s2.length();
++        System.out.println(len );
++        var trimmed = s2.trim();
++        System.out.println(trimmed.length());
++
+     }
+ }

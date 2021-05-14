@@ -1,0 +1,20 @@
+Index: src/com/company/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        var item = \"Shirt\";\n        var size = \"M\";\n        var price = 14.99;\n        var color = \"Red\";\n\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/Main.java b/src/com/company/Main.java
+--- a/src/com/company/Main.java	(revision cf16b4d4f2c157955a9d11cbc3b9162dc9bfa9fe)
++++ b/src/com/company/Main.java	(date 1620963325255)
+@@ -9,5 +9,9 @@
+         var price = 14.99;
+         var color = "Red";
+ 
++        var template = "Clothing item: %s, size %s, color %s, $%f";
++        var itemString = String.format(template, item, size, color, price);
++        System.out.println(itemString);
++
+     }
+ }

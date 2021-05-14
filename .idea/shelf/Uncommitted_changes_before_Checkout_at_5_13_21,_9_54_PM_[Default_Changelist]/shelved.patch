@@ -1,0 +1,34 @@
+Index: src/com/company/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String s1 = \"Hello!\";\n        var s2 = \"Hello!\";\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/Main.java b/src/com/company/Main.java
+--- a/src/com/company/Main.java	(revision 3091c7cc3eaa95ee17dc156f194a26b25a282fcc)
++++ b/src/com/company/Main.java	(date 1620964197118)
+@@ -5,5 +5,23 @@
+     public static void main(String[] args) {
+         String s1 = "Hello!";
+         var s2 = "Hello!";
++
++        if(s1 == s2){
++            System.out.println("They Match");
++        } else {
++            System.out.println("thy don't Mathch!" );
++
++        }
++        String s3= new String("Hello!");
++        String s4 = new String("Hello!");
++
++        if(s3.equals(s4)){
++                    System.out.println("They Match");
++                } else {
++                    System.out.println("thy don't Mathch!" );
++
++                }
++
++
+     }
+ }
